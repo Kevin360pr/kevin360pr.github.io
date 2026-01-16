@@ -1,11 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Dr. Phone - Soporte</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Phone - Network Audit Tool</title>
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --bg-color: #000000;
+            --card-bg: #1c1c1e;
+            --text-color: #ffffff;
+            --secondary-text: #8e8e93;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .icon-box {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #007AFF, #00C6FF);
+            border-radius: 22px;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 10px 20px rgba(0,122,255,0.3);
+        }
+        .icon-box span {
+            font-size: 50px;
+            color: white;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        p {
+            color: var(--secondary-text);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+        .card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 30px;
+        }
+        .feature-list {
+            text-align: left;
+            display: inline-block;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+        }
+        .feature-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .feature-list li::before {
+            content: "✓";
+            color: var(--primary-color);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: var(--secondary-text);
+        }
+        a { color: var(--primary-color); text-decoration: none; }
+    </style>
 </head>
 <body>
-    <h1>Dr. Phone Network Audit</h1>
-    <p>Esta es la página oficial de soporte para la aplicación Dr. Phone.</p>
-    <p>Contacto: kevingallozait@gmail.com</p>
+    <div class="container">
+        <div class="icon-box">
+            <span>Dr</span>
+        </div>
+        <h1>Dr. Phone</h1>
+        <p>Tu aliado experto en auditoría y diagnóstico de redes locales.</p>
+        
+        <div class="card">
+            <ul class="feature-list">
+                <li>Escaneo de red en tiempo real</li>
+                <li>Reportes detallados en PDF</li>
+                <li>Detección de latencia (Ping)</li>
+                <li>Resolución de Hostnames</li>
+            </ul>
+        </div>
+
+        <a href="mailto:kevin360pr@gmail.com" class="btn">Soporte Técnico</a>
+        
+        <footer>
+            <p>&copy; 2024 Dr. Phone Network Tool.<br>
+            Desarrollado por Kevin.<br>
+            <a href="/app-ads.txt">Verificación de Publicidad</a></p>
+        </footer>
+    </div>
 </body>
 </html>
